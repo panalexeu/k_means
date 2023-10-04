@@ -3,7 +3,7 @@ import random
 
 def k_means(objects, clusters):
     get_distance = lambda obj, centroid: abs(centroid[0] - obj[0]) + abs(
-        centroid[1] - obj[1])  # Спрощена формула для визначення дистанції
+        centroid[1] - obj[1])  # cпрощена формула для визначення дистанції
 
     all_objects = [obj for obj in objects]
     centroids = [random.choice(all_objects) for _ in range(clusters)]  # обираємо випадкові точки як центроїди
