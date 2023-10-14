@@ -48,7 +48,7 @@ def k_means(objects, clusters):
 # функція для обробки результатів
 def print_result(centroids, centroids_and_objs):
     for centroid in centroids_and_objs.keys():
-        print(f'centroid testint {centroids[centroid]}:', centroids_and_objs[centroid])
+        print(f'centroid {centroids[centroid]}:', centroids_and_objs[centroid])
 
 
 result = k_means([[1, 1], [0, 0], [2, 0], [4, 4], [5, 5], [5, 3]], 2)
